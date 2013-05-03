@@ -1,0 +1,7 @@
+<h1>Nakupny kosik</h1>
+
+<ul>
+<% @products.each do |product_id| %>
+  <li><%= Product.find(product_id).name %></li>
+<% end %>
+</ul>
